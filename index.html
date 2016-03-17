@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='/js/K/handlebar.js'></script>
+	<script src='/js/K/K.js'></script>
+	<script src='/js/K/src/EventHub.js'></script>
+	<script src='myApp.js'></script>
+	<title></title>
+</head>
+<body>
+<div id='headline'>headline</div>
+<div id='viewport_one'>viewport one</div>
+<div id='viewport_two'>viewport two</div>
+<div id='viewport_three' style='height:300px; width:300px; border:solid 1px'>viewport three</div>
+
+<a id='link' href='#abc'>link</a><br/>
+
+<a id='backlink'  href='#'>back</a>
+
+<script>
+	
+	window.onload=
+		function(){
+			myApp();
+		};
+	
+	
+</script>
+</body>
+
+<script id="headline-template" type="text/x-handlebars-template">
+
+  <h1 id='myHeadline'>headline</h1>
+
+</script>
+
+
+<script id="example-template" type="text/x-handlebars-template">
+
+  <div><a id='id_link1' href='#abc'>ein neuer link</a></div>
+
+</script>
+
+<script id="example-template2" type="text/x-handlebars-template">
+
+  <div><a id='id_link2' href='#abc'>ein neuer link2</a></div>
+
+</script>
+
+
+</html>

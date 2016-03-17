@@ -1,0 +1,26 @@
+
+K.ScriptLoader = function(scripts, callback){
+
+    for(var i = 0; i < scripts.length; i++){
+
+        var script = document.createElement('script');
+
+        script.type = 'text/javascript';
+
+        script.setAttribute('src', scripts[i] );
+
+        document.body.appendChild(script);
+
+        script.onload = function () {
+
+            loadedScripts += 1;
+
+            if(loadedScripts == scripts.length){
+                callback();
+            }
+
+        };
+
+    }
+
+};
