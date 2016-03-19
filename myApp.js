@@ -1,5 +1,6 @@
 var myApp = function(){
 
+
 	var eventHub = new K.EventHub();
 
 	K.Router.addRoute(
